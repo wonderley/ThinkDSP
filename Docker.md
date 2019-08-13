@@ -3,6 +3,13 @@ Docker environment for ThinkDSP
 First, [install Docker](https://www.docker.com/products/docker-desktop).
 
 Setup:
+
+Build the image by adding the dependencies in `environment.yml` to a conda image.
+```
+> ./dockerbuild.sh
+```
+
+Run the image you built. This will start a shell process with access to the `code` directory, and sharing your local machine's ports for the Juypter notebook and Python debugger.
 ```
 > ./dockerrun.sh
 ```
